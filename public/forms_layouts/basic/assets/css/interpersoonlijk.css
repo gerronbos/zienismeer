@@ -1,0 +1,18 @@
+.competence_title{
+    color:rgb(43,48,133);
+}
+
+.inter-heading{
+    background-color:rgb(39,129,194) !important;
+}
+
+.inter-heading .panel-title{
+    color:rgb(43,48,133);
+}
+
+.inter-body {
+    background-color:rgba(39,129,194,0.5) !important;
+}
+.panel{
+    border-color: #2C3D8D !important;
+}

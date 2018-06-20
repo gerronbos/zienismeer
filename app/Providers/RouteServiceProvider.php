@@ -27,11 +27,6 @@ class RouteServiceProvider extends ServiceProvider
 
         parent::boot();
 
-
-        Route::model('form','\App\Entities\Form');
-        Route::model('competence','\App\Entities\Competence');
-        Route::model('competencequestion','\App\Entities\CompetenceQuestion');
-
     }
 
     /**

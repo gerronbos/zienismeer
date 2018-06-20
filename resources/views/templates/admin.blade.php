@@ -21,7 +21,9 @@
     <link href="/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    {{-- <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -369,7 +371,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">@if(isset($title) && $title) {{$title}} @endif</h1>
+                        <h1 class="page-header">@if(isset($title) && $title) {!! $title !!} @endif</h1>
                     </div>
                     <div class="col-lg-12">
                         @yield('content')
@@ -396,6 +398,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/sb-admin-2.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="/js/deletion.js"></script>
 
     @yield('scripts')
 

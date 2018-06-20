@@ -13,6 +13,7 @@ class AuthController extends Controller{
     {
         $view = View::make('auth.login');
 
+
         return $view;
 
     }
@@ -42,5 +43,10 @@ class AuthController extends Controller{
         }
 
 
+    }
+
+    public function getLogout(){
+        Auth::logout();
+        return redirect()->route('auth.login');
     }
 }

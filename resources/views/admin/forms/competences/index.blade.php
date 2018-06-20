@@ -11,7 +11,7 @@ $title = $form->name;
         @include('admin.forms.nav')
     </div>
     <div class="col-lg-10">
-        <a href="{{route('admin.form.competences.new',[$form->id])}}" class="btn btn-primary pull-right" style="margin-bottom: 1%;">Competentie toevoegen</a>
+        <a href="{{route('admin.competences.new',["form_id" => $form->id])}}" class="btn btn-primary pull-right" style="margin-bottom: 1%;">Competentie toevoegen</a>
         <table class="table table-bordered">
             <tr>
                 <th>Naam</th>

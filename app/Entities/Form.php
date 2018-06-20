@@ -15,6 +15,14 @@ class Form extends Model
 
     public function Competences()
     {
+        return $this->belongsToMany('App\Entities\Competence', 'forms_has_competences', 'form_id', 'competence_id');
         return $this->hasMany('App\Entities\Competence');
+    }
+
+
+    public function getLayoutImageAttribute(){
+        $layouts = Config("forms.layouts");
+
+        return $layouts[$this->layout]["img"];
     }
 }

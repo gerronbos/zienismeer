@@ -6,10 +6,8 @@ $title = $form->name;
 ?>
 @section('content')
 <div class="row">
-    <div class="col-lg-2">
-        @include('admin.forms.nav')
-    </div>
-    <div class="col-lg-10">
+    <div class="col-lg-12">
+        <a href="{{route("admin.forms.show",[$form->id])}}" class="btn btn-default" style="margin-bottom:1%;">Terugn naar overzicht</a>
         @include('admin.forms.form')
     </div>
 
